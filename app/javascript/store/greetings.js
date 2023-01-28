@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const GET_GREETING = 'hello-rails-react/greetings/GET_GREETING';
-const initialState = {};
+const initialState = [];
 
 export const fetchGreeting = createAsyncThunk(GET_GREETING, async () => {
   const data = await fetch('api/v1/greetings');

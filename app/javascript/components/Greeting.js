@@ -5,11 +5,12 @@ import { fetchGreeting } from '../store/greetings';
 
 const Greeting = () => {
   const dispatch = useDispatch();
-  const greet = useSelector((state) => state.greeting)
+  const greet = useSelector((state) => state.greet)
 
   useEffect(() => {
     dispatch(fetchGreeting())
   }, []);
+  console.log(greet)
 
   const handleGreeting = () => {
     dispatch(fetchGreeting())
