@@ -10,7 +10,6 @@ const Greeting = () => {
   useEffect(() => {
     dispatch(fetchGreeting())
   }, []);
-  console.log(greet)
 
   const handleGreeting = () => {
     dispatch(fetchGreeting())
